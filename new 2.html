@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>бла бла</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</style>
+</head>
+<script>
+window.addEventListener("load",function(){
+    if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
+     // перезаписываем страницу при загрузке
+     
+    document.getElementById("btn").addEventListener("click",function(){
+        var li = document.createElement("li"); 
+        li.innerHTML = "element";
+        document.getElementsByClassName("navbar-nav")[0].appendChild(li);
+    }); // запиливаем функцию добавления элемента в список ul
+    
+    window.addEventListener("click",function(){
+        localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+    }); // перезаписываем страницу при каждом клике 
+	
+		var blob = new Blob([jQuery("html").html()], {
+        type: "text/html;charset=utf-8"
+    });
+	saveAs(blob, "page.html");
+});
+</script>
+<body>
+    <input type="button" id="btn" value='Добавить элемент списка'>
+    <ul class="navbar-nav">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
