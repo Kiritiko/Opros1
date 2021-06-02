@@ -32,13 +32,6 @@ jQuery('document').ready(function(){
 	
 	});
 	
-		jQuery('#sb3').on('click',function(){//shablon2
-	jQuery('#t1').remove();
-	jQuery('#b4').remove();
-	jQuery('#sb2').remove();
-	//jQuery('#q1').remove();
-	//jQuery('#qq1').remove();
-	});
 	
 		for(var i=0;i<15;i++){
 	jQuery('#sb3').on('click',function(){//shablon2
@@ -49,6 +42,32 @@ jQuery('document').ready(function(){
 	jQuery('#qq1').remove();
 	jQuery('#qnn1').remove();
 	});};
+
+
+	
+		jQuery('#sb3').on('click',function(){//shablon2
+	jQuery('#t1').remove();
+	jQuery('#b4').remove();
+	jQuery('#sb2').remove();
+	//jQuery('#q1').remove();
+	//jQuery('#qq1').remove();
+	jQuery('#otp').show();
+	//var blob = new Blob([jQuery("html").html()], {
+     //   type: "text/html;charset=utf-8"
+    //});
+	//saveAs(blob, "page.html");
+	});
+	
+
+window.addEventListener("load",function(){
+    if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
+});
+
+
+window.addEventListener("click",function(){
+        localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+    });
+
 	
 		jQuery('input').on('keyup',function(){
 	var value1;
