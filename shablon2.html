@@ -5,10 +5,11 @@
 <link href='style.css' rel='styleshhet' type='text/css'></link>
 <script type='text/javascript' src='jquery1.js'></script>
 <script type='text/javascript' src='srip2.js'></script>
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"></script>
 </head>
 <body bgcolor=rgb(200,200,102)>
 
-<button id=sb3 type=button value="Сохранить шаблон" >Нажмите чтобы убрать все текстовые поля </button>
+<button id=sb3 type=button value="Сохранить шаблон" >Сформировать Опрос </button>
 <br>
 
 <center><h1><font face="Verdana"
@@ -24,7 +25,7 @@ color=white>
 <button id=sb2 type=button value="подтвердить" >Cоздать</button></center>
 <Font color=white id=f2><center>Это предварительный вид вопроса который вы хотите создать</center></Font>
 
-<center><input type=button value='Отправить' id=otp visibility: hidden; onclick="window.location.href = 'https://kiritiko.github.io/Opros1/new 2.html';"/></center>
+<center><a href=new2.html><input type=button value='Получить ссылку' id=otp visibility: hidden /></a></center>
 <div id=d1 >
 <table id=t1 border=5 botdercolor=rgb(100,150,100) width=65%
 align=center bgcolor=DarkSlateBlue>
@@ -32,9 +33,10 @@ align=center bgcolor=DarkSlateBlue>
 <h3><center><font face="Verdana" color=white><i>
 <div id=qn1 >введите название вопроса</div>
 <input id=qnn1 type=text value='введите название вопроса' />
-<br></i></font></center></h3>
+</i></font></center></h3>
 <h4 id=h4><font color=rgb(100,150,100)>
-<div id=ques><input type=checkbox name=ff1 ><div id=q1>Вариант ответа</div></input><input type=text id=qq1 value='Вариант ответа' />  <br></div>
+<div id=ques><input type=checkbox name=ff1 ><div id=q1 style="font-size: 20px">Вариант ответа</div></input><input type=text id=qq1 value='Вариант ответа'></input>
+<br></div>
 <br>
 <input type=button value='Добавить вариант ответа' id=btcreate />
 </h4></font>
@@ -43,6 +45,8 @@ align=center bgcolor=DarkSlateBlue>
 <div id=test1>  </div>
 </td>
 </table><br><br></div>
+<br>
+<center><a href=спс.html><input type=button Value='Отправить' id=otp1 visibility: hidden /></a></center>
 
 </body>
 </html>

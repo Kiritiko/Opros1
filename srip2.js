@@ -53,20 +53,13 @@ jQuery('document').ready(function(){
 	//jQuery('#qq1').remove();
 	jQuery('#otp').show();
 	//var blob = new Blob([jQuery("html").html()], {
-     //   type: "text/html;charset=utf-8"
+    //    type: "text/html;charset=utf-8"
     //});
 	//saveAs(blob, "page.html");
 	});
 	
 
-window.addEventListener("load",function(){
-    if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
-});
 
-
-window.addEventListener("click",function(){
-        localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
-    });
 
 	
 		jQuery('input').on('keyup',function(){
@@ -109,6 +102,16 @@ window.addEventListener("click",function(){
 	jQuery('#qq1').val('введите вариант ответа');
 	});
 	
+	jQuery('#otp').on('click',function(){
+   // var blob = new Blob([$("html").html()], {type: "text/html;charset=utf-8"});
+   // saveAs(blob, "shablon.html");
+	//localStorage.storedlist = document.getElementById("html")[0].innerHTML;
+	//document.getElementById('html')[0].innerHTML = localstorage.storedlist;
+	
+
+
+	});
+
 
 	jQuery('#b1').on('click',function(){
     var value1;
@@ -119,5 +122,36 @@ window.addEventListener("click",function(){
 	jQuery('#f1').remove();
 	//jQuery('#t1').remove() //возможное удаление таблицы
 	});
-	
+
+
+	jQuery('#otp').on('click',function(){
+	//	window.localstorage.removeItem('page');
+	jQuery('#otp').hide();
+	jQuery('#otp1').show();
+	if (index==2)prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new2.html");	
+	else prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new3.html");
+localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
 	});
+
+
+		
+		
+	});
+	
+	var index=2;
+	//window.addEventListener("load",function(){
+    //if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
+     // перезаписываем страницу при загрузке
+    
+   // window.addEventListener("click",function(){
+   //     if (index==2) localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+	//	else localStorage.setItem("page1",document.getElementsByTagName("html")[0].innerHTML);
+   // }); // перезаписываем страницу при каждом клике 
+	
+		//var blob = new Blob([jQuery("html").html()], {
+      //  type: "text/html;charset=utf-8"
+    //});
+//});
+
+
+	
