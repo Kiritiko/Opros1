@@ -128,9 +128,14 @@ jQuery('document').ready(function(){
 	//	window.localstorage.removeItem('page');
 	jQuery('#otp').hide();
 	jQuery('#otp1').show();
-	if (index==2)prompt("Ваша ссылочка на опрос: ", "https://kiritiko.github.io/Opros1/new2.html");	
-	else prompt("Ваша ссылочка на опрос: ", "https://kiritiko.github.io/Opros1/new2.html");
+	if (index==2)prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new2.html");	
+	else prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new3.html");
+saveAs(blob,'opros.html');
+
+      //jQuery('#bod').load('new2.html'); 
+	  
 localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+
 	});
 
 
@@ -138,7 +143,21 @@ localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
 		
 	});
 	
-	var index=2;
+	//window.onload=()=>{
+	//	var uploadfile=document.getElementById('uploadfile');
+		
+	//	uploadfile.addEventListener('click',function(){
+	//		var uploadfile=document.getElementById('uploadfile');
+		//document.getElementsByTagName("html")[0].innerHTML = uploadfile;	
+	//	});
+		
+	//};
+	
+	
+	
+	
+	
+	//var index=2;
 	//window.addEventListener("load",function(){
     //if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
      // перезаписываем страницу при загрузке
