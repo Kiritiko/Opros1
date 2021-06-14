@@ -128,13 +128,17 @@ jQuery('document').ready(function(){
 	//	window.localstorage.removeItem('page');
 	jQuery('#otp').hide();
 	jQuery('#otp1').show();
+	jQuery('#Save1').show();
+				var blob = new Blob([jQuery("html").html()], {
+			type: "text/html;charset=utf-8"});
+saveAs(blob,'opros.html');
+href=спс.html
 	if (index==2)prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new2.html");	
 	else prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new3.html");
-saveAs(blob,'opros.html');
 
       //jQuery('#bod').load('new2.html'); 
 	  
-localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+//localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
 
 	});
 
