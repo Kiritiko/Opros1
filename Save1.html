@@ -9,23 +9,6 @@
 <script type='text/javascript' src='srip2.js'></script>
 <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/FileSaver.js"></script>
 </head>
-<script>
-window.addEventListener("load",function(){
-   document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
-	//index=3;
-     // перезаписываем страницу при загрузке
-    
-   // window.addEventListener("click",function(){
-   //     localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
-   // }); // перезаписываем страницу при каждом клике 
-	
-		var blob = new Blob([jQuery("html").html()], {
-       type: "text/html;charset=utf-8"
-    });
-	//saveAs(blob,'opros.html');
-
-});
-</script>
 <body>
 <form action='form.php' method='post' enctype="multipart/form-data">
 <input type='file' name='filename' /><br>
