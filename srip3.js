@@ -2,16 +2,17 @@ jQuery('document').ready(function(){
 	
 		jQuery('#sb2').on('click',function(){//shablon2
 	var value1,val2,i=0,tab,t_clon;
-	var deleteElement = document.getElementById("test1");
+	//var deleteElement = document.getElementById("test1");
 	//const t_clon=jQuery('#t1').clone();;
-	jQuery('#ques').hide();
-	jQuery('#btcreate').hide();
-	jQuery('#h4').hide();
-	t_clon=jQuery('#t1').clone();
+	//jQuery('#ques').hide();
+	//jQuery('#btcreate').hide();
+	//jQuery('#h4').hide();
+	//t_clon=jQuery('#t1').clone();
 	jQuery('#d1').append(t_clon);
 	jQuery('#ques').show();
 	jQuery('#btcreate').show();
 	jQuery('#h4').show();
+	
 	
 	deleteElement.innerHTML = '';
 	//jQuery('#test1').innerHTML='';
@@ -46,11 +47,10 @@ jQuery('document').ready(function(){
 
 	
 		jQuery('#sb3').on('click',function(){//shablon2
-	jQuery('#t1').remove();
+	//jQuery('#t1').remove();
+	jQuery('#ques').remove();
 	jQuery('#b4').remove();
 	jQuery('#sb2').remove();
-	//jQuery('#q1').remove();
-	//jQuery('#qq1').remove();
 	jQuery('#otp').show();
 	//var blob = new Blob([jQuery("html").html()], {
     //    type: "text/html;charset=utf-8"
@@ -103,10 +103,7 @@ jQuery('document').ready(function(){
 	});
 	
 	jQuery('#otp').on('click',function(){
-   // var blob = new Blob([$("html").html()], {type: "text/html;charset=utf-8"});
-   // saveAs(blob, "shablon.html");
-	//localStorage.storedlist = document.getElementById("html")[0].innerHTML;
-	//document.getElementById('html')[0].innerHTML = localstorage.storedlist;
+
 	
 
 
@@ -120,7 +117,7 @@ jQuery('document').ready(function(){
 	jQuery('#b1').remove();
 	jQuery('#i1').remove();
 	jQuery('#f1').remove();
-	//jQuery('#t1').remove() //возможное удаление таблицы
+
 	});
 
 
@@ -136,9 +133,6 @@ href=спс.html
 	if (index==2)prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new2.html");	
 	else prompt("Ваша ссылочка на опрос: ", "file:///C:/DZ/Инфокоммукационые%20системы/урок%2015/new3.html");
 
-      //jQuery('#bod').load('new2.html'); 
-	  
-//localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
 
 	});
 
@@ -146,35 +140,9 @@ href=спс.html
 		
 		
 	});
-	
-	//window.onload=()=>{
-	//	var uploadfile=document.getElementById('uploadfile');
-		
-	//	uploadfile.addEventListener('click',function(){
-	//		var uploadfile=document.getElementById('uploadfile');
-		//document.getElementsByTagName("html")[0].innerHTML = uploadfile;	
-	//	});
-		
-	//};
+
 	
 	
-	
-	
-	
-	//var index=2;
-	//window.addEventListener("load",function(){
-    //if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");
-     // перезаписываем страницу при загрузке
-    
-   // window.addEventListener("click",function(){
-   //     if (index==2) localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
-	//	else localStorage.setItem("page1",document.getElementsByTagName("html")[0].innerHTML);
-   // }); // перезаписываем страницу при каждом клике 
-	
-		//var blob = new Blob([jQuery("html").html()], {
-      //  type: "text/html;charset=utf-8"
-    //});
-//});
 
 
 	
