@@ -1,5 +1,5 @@
 <?php
-//echo ($_FILES['filename']['size']);
+
 
 if(move_uploaded_file($_FILES['filename']['tmp_name'], 'save/'.$_FILES['filename']['name']))
 {

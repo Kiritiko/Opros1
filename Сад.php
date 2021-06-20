@@ -1,5 +1,7 @@
 <?php
+session_start();
 $num=1;
+$_SESSION['NUM']=$num;
 $var1=0;
 $var2=0;
 $var3=0;
@@ -84,14 +86,14 @@ $mysql->query("INSERT INTO `shablon3` (`var1`,`var2`,`var3`,`var4`,`var5`,`var6`
 </td></tr>
 <tr><td>
 <div id="test1"> 
-<form action='' method='POST'>
+<form method='POST' action='спс.php' >
  <div id="ques"><input type="radio" name="ff1" value='1'><div id="q1" style="font-size: 20px">На ленина 45</div>
 <br></div><div id="ques"><input type="radio" name="ff1" value='2'><div id="q1" style="font-size: 20px">п-р Мира 12</div>
 <br></div><div id="ques"><input type="radio" name="ff1" value='3'><div id="q1" style="font-size: 20px">Волкова 49</div>
 <br></div><div id="ques"><input type="radio" name="ff1" value='4'><div id="q1" style="font-size: 20px">Строительный 5</div>
 <br></div><div id="ques"><input type="radio" name="ff1" value='5'><div id="q1" style="font-size: 20px">Беляева 9</div>
 <br></div>
-<center><input type='sumbit' value="Отправить" name='send' id="otp1" visibility:="" hidden="" style="display: inline-block;"></center>
+<center><input type='submit' value="Отправить" name='send' id="otp1" ></center>
 
 </form>
 </div>
